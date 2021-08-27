@@ -36,7 +36,7 @@
 
                     <select multiple class="form-control" name="tag[]">
                         @foreach ($tags as $tag)
-                        <option {{ ($tagsSelected->contains($tag->id) ? 'selected' : '') }} value="{{$tag->id}}">{{$tag->name}}</option>
+                        <option {{ ($tagsSelected->contains($tag->id) ? 'selected' : '') }} value="{{ $tag->id }}">{{$tag->name}}</option>
                         @endforeach
                     </select>
                 </div>
